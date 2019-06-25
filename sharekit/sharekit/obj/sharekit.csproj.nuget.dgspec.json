@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/mulish/Desktop/gitcoin/share-kit-xamarin/sharekit/sharekit/sharekit.csproj": {}
+  },
+  "projects": {
+    "/Users/mulish/Desktop/gitcoin/share-kit-xamarin/sharekit/sharekit/sharekit.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/mulish/Desktop/gitcoin/share-kit-xamarin/sharekit/sharekit/sharekit.csproj",
+        "projectName": "sharekit",
+        "projectPath": "/Users/mulish/Desktop/gitcoin/share-kit-xamarin/sharekit/sharekit/sharekit.csproj",
+        "packagesPath": "/Users/mulish/.nuget/packages/",
+        "outputPath": "/Users/mulish/Desktop/gitcoin/share-kit-xamarin/sharekit/sharekit/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/mulish/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Forms9Patch": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

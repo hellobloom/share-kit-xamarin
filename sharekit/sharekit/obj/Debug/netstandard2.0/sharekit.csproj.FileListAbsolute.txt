@@ -1,0 +1,9 @@
+/Users/mulish/Projects/sharekit/sharekit/bin/Debug/netstandard2.0/sharekit.deps.json
+/Users/mulish/Projects/sharekit/sharekit/bin/Debug/netstandard2.0/sharekit.dll
+/Users/mulish/Projects/sharekit/sharekit/bin/Debug/netstandard2.0/sharekit.pdb
+/Users/mulish/Projects/sharekit/sharekit/obj/Debug/netstandard2.0/sharekit.csproj.CoreCompileInputs.cache
+/Users/mulish/Projects/sharekit/sharekit/obj/Debug/netstandard2.0/sharekit.AssemblyInfoInputs.cache
+/Users/mulish/Projects/sharekit/sharekit/obj/Debug/netstandard2.0/sharekit.AssemblyInfo.cs
+/Users/mulish/Projects/sharekit/sharekit/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/mulish/Projects/sharekit/sharekit/obj/Debug/netstandard2.0/sharekit.dll
+/Users/mulish/Projects/sharekit/sharekit/obj/Debug/netstandard2.0/sharekit.pdb

@@ -1,0 +1,17 @@
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/sharekittest.csprojAssemblyReference.cache
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/sharekittest.csproj.CoreCompileInputs.cache
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/sharekittest.AssemblyInfoInputs.cache
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/sharekittest.AssemblyInfo.cs
+/Users/mulish/Projects/sharekittest/sharekittest/bin/Debug/netstandard2.0/sharekittest.deps.json
+/Users/mulish/Projects/sharekittest/sharekittest/bin/Debug/netstandard2.0/sharekittest.dll
+/Users/mulish/Projects/sharekittest/sharekittest/bin/Debug/netstandard2.0/ref/sharekittest.dll
+/Users/mulish/Projects/sharekittest/sharekittest/bin/Debug/netstandard2.0/sharekittest.pdb
+/Users/mulish/Projects/sharekittest/sharekittest/bin/Debug/netstandard2.0/sharekit.dll
+/Users/mulish/Projects/sharekittest/sharekittest/bin/Debug/netstandard2.0/sharekit.pdb
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/sharekittest.csproj.CopyComplete
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/sharekittest.dll
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/ref/sharekittest.dll
+/Users/mulish/Projects/sharekittest/sharekittest/obj/Debug/netstandard2.0/sharekittest.pdb
