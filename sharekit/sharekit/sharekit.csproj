@@ -19,4 +19,7 @@
     <EmbeddedResource Include="Resources\bloombutton%403x.png" />
     <EmbeddedResource Include="Resources\bloombutton%404x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Forms9Patch" Version="1.7.0" />
+  </ItemGroup>
 </Project>
