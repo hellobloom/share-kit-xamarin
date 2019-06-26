@@ -37,7 +37,7 @@ Xamarin implementation of [Share Kit](https://github.com/hellobloom/share-kit#re
     Forms9Patch.iOS.Settings.Initialize(this);
     LoadApplication(new App());
 	```
-	- After doing this the library will now be ready for usage in your Xamarin project.
+ After doing the above the `sharekit` library will now be ready for usage in your Xamarin project.
 
 # Usage
 
