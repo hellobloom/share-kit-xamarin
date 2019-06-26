@@ -69,7 +69,7 @@ MainLayout.Padding = 5;
 // finally add the verify button to the layout
 MainLayout.Children.Add(bloomButton);
 ```
-Also note the `MainLayout` here is the name I have given the `StackLayout` in my `MainPage.xaml` file, so it can be a different name depending on how you have named your layout.
+Also note the `MainLayout` here is the name (`x:Name`) I have given the `StackLayout` in my `MainPage.xaml` file, so it can be a different name depending on how you have named your layout.
 
 Once you have built your Xamarin project and deploy it either in iOS or Android devices/emulators, the bloom verify button should now appear as shown below
 - iOS
