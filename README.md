@@ -7,16 +7,16 @@ Xamarin implementation of [Share Kit](https://github.com/hellobloom/share-kit#re
 # Building the Xamarin .NET Standard Library 
 
 1. Open the `sharekit.sln` solution in any version of Visual Studio greater than or equal to 2019.
-2. Make sure Visual Studio has restored the Nuget packages of Forms9Patch as shown below, this is very important otherwise the solution WON'T compile.
+2. Make sure Visual Studio has restored the NuGet packages of Forms9Patch as shown below, this is very important otherwise the solution WON'T compile.
 
-![nuget-packages](images/nuget-packages.png)
+![NuGet-packages](images/NuGet-packages.png)
 
-3. Once the Nuget packages have been restored and particularly the Forms9Patch pacakage, build the project and make sure its builds successfully and then navigate to the `sharekit` project folder, then go to the folders `bin -> Debug -> netstandard2.0` and you should find the library `sharekit.dll` ready for use in your xamarin project.
+3. Once the NuGet packages have been restored and particularly the Forms9Patch pacakage, build the project and make sure its builds successfully and then navigate to the `sharekit` project folder, then go to the folders `bin -> Debug -> netstandard2.0` and you should find the library `sharekit.dll` ready for use in your xamarin project.
 
 # Installing the library
 
 1. First of all make sure your xamarin project is a `Xamarin.Forms` project and NOT a native iOS/android project with a shared Xamarin/c# codebase, otherwise  you won't be able to use the library because after all the library is a Xamarin Library :).
-2. Next add the `Forms9Patch` Nuget package to your project, this is also very IMPORTANT otherwise your project will fail to build/compile if this package is missing. 
+2. Next add the `Forms9Patch` NuGet package to your project, this is also very IMPORTANT otherwise your project will fail to build/compile if this package is missing. 
 	- You can do this by going to the Visual Studio menu and selecting `Project -> Add NuGet Packages..` and then search for `forms9patch` you should get a result as shown below, from there select the package and the click on `Add Package` to install it.
 	![forms9patch.png](images/forms9patch.png)
 3. Once the `Forms9Patch` package has been added, add the above compiled library, by going to `Project -> Edit References` in Visual Studio. Then click on the `.Net Assembly` tab and then click on the browse button below and the navigate to the `sharekit.dll` library generated above and select it.
