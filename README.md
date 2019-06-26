@@ -75,7 +75,7 @@ Once you have built your Xamarin project and deploy it either in iOS or Android 
 - iOS
 ![ios](images/ios.png)
 - Android
-![Android](images/Android.png)
+![android](images/android.png)
 
 # Testing 
 
