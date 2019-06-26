@@ -15,9 +15,4 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
     <PackageReference Include="Forms9Patch" Version="1.7.0" />
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="sharekit">
-      <HintPath>..\..\sharekit\sharekit\bin\Debug\netstandard2.0\sharekit.dll</HintPath>
-    </Reference>
-  </ItemGroup>
 </Project>

@@ -7,8 +7,9 @@ namespace sharekit
     public class ShareKit
     {
         private const string ResourceId = "sharekit.Resources.bloombutton";
-        private string bloomRequestData;
-        private string callBackUrl;
+        private const string QueryUrl = "?share-kit-from=button";
+        private string BloomRequestData;
+        private string CallBackUrl;
 
         public ImageButton RequestButton(RequestData requestData, string appCallBackUrl)
         {
@@ -21,16 +22,15 @@ namespace sharekit
                 // set the share-kit-from query url
                 if (!string.IsNullOrEmpty(requestData.url))
                 {
-                    requestData.url += "?share-kit-from=button";
+                    requestData.url += QueryUrl;
                 }
-
-                bloomRequestData = JsonConvert.SerializeObject(requestData);
+                BloomRequestData = JsonConvert.SerializeObject(requestData);
             }
            
 
             if (!string.IsNullOrEmpty(appCallBackUrl))
             {
-                callBackUrl = Uri.EscapeDataString(appCallBackUrl);
+                CallBackUrl = Uri.EscapeDataString(appCallBackUrl);
             }
 
             ImageButton bloomButton = new ImageButton
@@ -50,13 +50,12 @@ namespace sharekit
 
         private string GetBloomLink()
         {
-            return $"https://bloom.co/download?request={Base64Encode(bloomRequestData)}&callback-url={callBackUrl}";
+            return $"https://bloom.co/download?request={Base64Encode(BloomRequestData)}&callback-url={CallBackUrl}";
         }
 
         private string Base64Encode(string requestDataString)
         {
-            var requestDataBytes = System.Text.Encoding.UTF8.GetBytes(requestDataString);
-            return Convert.ToBase64String(requestDataBytes);
+            return Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(requestDataString));
         }
     }
 }
