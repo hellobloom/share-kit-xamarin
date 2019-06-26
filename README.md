@@ -22,15 +22,15 @@ Xamarin implementation of [Share Kit](https://github.com/hellobloom/share-kit#re
 3. Once the `Forms9Patch` package has been added, add the above compiled library, by going to `Project -> Edit References` in Visual Studio. Then click on the `.Net Assembly` tab and then click on the browse button below and the navigate to the `sharekit.dll` library generated above and select it.
 	- The library should now be shown under your dependencies in Visual Studio as follows
 	![sharekit-dll](images/sharekit-dll.png)
-4. Finally setup the `Forms9Patch` library in the respective xamarin iOS and Android projects, by doing the following :_
-	- For Android add the initialization statement `Forms9Patch.Droid.Settings.Initialize(this);` in the MainActivity.cs file between the lines `global::Xamarin.Forms.Forms.Init(this, savedInstanceState);` and `LoadApplication(new App());` as shown below
+4. Finally setup the `Forms9Patch` package in the respective xamarin iOS and Android projects, by doing the following :_
+	- For Android add the initialization statement `Forms9Patch.Droid.Settings.Initialize(this);` in the `MainActivity.cs` file between the lines `global::Xamarin.Forms.Forms.Init(this, savedInstanceState);` and `LoadApplication(new App());` as shown below
 
 	```
 	global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
     Forms9Patch.Droid.Settings.Initialize(this);
     LoadApplication(new App());
 	```
-	- For iOS add the initialization statement `Forms9Patch.iOS.Settings.Initialize(this);` in the MainActivity.cs file between the lines `global::Xamarin.Forms.Forms.Init(this, savedInstanceState);` and `LoadApplication(new App());` as shown below
+	- For iOS add the initialization statement `Forms9Patch.iOS.Settings.Initialize(this);` in the `AppDelegate.cs` file between the lines `global::Xamarin.Forms.Forms.Init(this, savedInstanceState);` and `LoadApplication(new App());` as shown below
 
 	```
 	global::Xamarin.Forms.Forms.Init();
