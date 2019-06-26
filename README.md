@@ -44,30 +44,37 @@ Xamarin implementation of [Share Kit](https://github.com/hellobloom/share-kit#re
 To use the library in your project, simply add it as shown below, to any of your Xamarin pages which extend the `ContentPage` xamarin class i.e. `MainPage.xaml.cs`.
 
 ```
-// set the request data
-var requestData = new sharekit.RequestData
+public MainPage()
 {
-    action = sharekit.RequestData.Action_attestation,
-    token = "0x8f31e48a585fd12ba58e70e03292cac712cbae39bc7eb980ec189aa88e24d043",
-    url = "https://receive-kit.bloom.co/api/receive",
-    org_logo_url = "https://bloom.co/images/notif/bloom-logo.png",
-    org_name = "Bloom",
-    org_usage_policy_url = "https://bloom.co/legal/terms",
-    org_privacy_policy_url = "https://bloom.co/legal/privacy",
-    types = new string[] { "full-name", "phone", "email" }
-};
+    InitializeComponent();
 
-// set the callback url
-var callBackUrl = "https://google.com";
 
-// then intialize the button
-var bloomButton = new sharekit.ShareKit().RequestButton(requestData, callBackUrl);
+    // set the request data
+    var requestData = new sharekit.RequestData
+    {
+        action = sharekit.RequestData.Action_attestation,
+        token = "0x8f31e48a585fd12ba58e70e03292cac712cbae39bc7eb980ec189aa88e24d043",
+        url = "https://receive-kit.bloom.co/api/receive",
+        org_logo_url = "https://bloom.co/images/notif/bloom-logo.png",
+        org_name = "Bloom",
+        org_usage_policy_url = "https://bloom.co/legal/terms",
+        org_privacy_policy_url = "https://bloom.co/legal/privacy",
+        types = new string[] { "full-name", "phone", "email" }
+    };
 
-// set the layout padding
-MainLayout.Padding = 5;
+    // set the callback url
+    var callBackUrl = "https://google.com";
 
-// finally add the verify button to the layout
-MainLayout.Children.Add(bloomButton);
+    // then intialize the button
+    var bloomButton = new sharekit.ShareKit().RequestButton(requestData, callBackUrl);
+
+    // set the layout padding
+	MainLayout.Padding = 5;
+
+    // finally add the verify button to the layout
+    MainLayout.Children.Add(bloomButton);
+    
+}
 ```
 Also note the `MainLayout` here is the name (`x:Name`) I have given the `StackLayout` in my `MainPage.xaml` file, so it can be a different name depending on how you have named your layout.
 
