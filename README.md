@@ -8,6 +8,7 @@ Xamarin implementation of [Share Kit](https://github.com/hellobloom/share-kit#re
 
 1. Open the `sharekit.sln` solution in any version of Visual Studio greater than or equal to 2019.
 2. Make sure Visual Studio has restored the Nuget packages of Forms9Patch, this is very important otherwise the solution WON'T compile.
+
 ![nuget-packages](images/nuget-packages.png)
 3. Once the Nuget packages have been restored and particularly the Forms9Patch pacakage, build the project and make sure its builds successfully and then navigate to the `sharekit` project folder, then go to the folders `bin -> Debug -> netstandard2.0` and you should find the library `sharekit.dll` ready for use in your xamarin project.
 
@@ -78,6 +79,3 @@ Once you have built your Xamarin project and deploy it either in iOS or android 
 # Testing 
 
 The sharekittest folder contains a solution for Visual Studio 2019 or greater that shows the library added and running as explained above.
-
-
-
