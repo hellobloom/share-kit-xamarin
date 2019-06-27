@@ -4,10 +4,7 @@ namespace ShareKit
 {
     public class RequestData
     {
-
-
-        public const string Action_attestation = "request_attestation_data";
-
+        public const string ActionAttestation = "request_attestation_data";
         [JsonProperty("action")]
         public string Action { get; set; }
         [JsonProperty("token")]
@@ -24,7 +21,5 @@ namespace ShareKit
         public string OrgPrivacyPolicyUrl { get; set; }
         [JsonProperty("types")]
         public string[] Types { get; set; }
-
-
     }
 }
