@@ -21,7 +21,7 @@ namespace sharekittest
             // set the request data
             var requestData = new ShareKit.RequestData
             {
-                Action = ShareKit.RequestData.Action_attestation,
+                Action = ShareKit.RequestData.ActionAttestation,
                 Token = "0x8f31e48a585fd12ba58e70e03292cac712cbae39bc7eb980ec189aa88e24d043",
                 Url = "https://receive-kit.bloom.co/api/receive",
                 OrgLogoUrl = "https://bloom.co/images/notif/bloom-logo.png",
