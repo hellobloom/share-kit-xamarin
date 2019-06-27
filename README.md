@@ -6,12 +6,12 @@ Xamarin implementation of [Share Kit](https://github.com/hellobloom/share-kit#re
 
 # Building the Xamarin .NET Standard Library 
 
-1. Open the `sharekit.sln` solution in any version of Visual Studio greater than or equal to 2019.
+1. Open the `ShareKit.sln` solution in any version of Visual Studio greater than or equal to 2019.
 2. Make sure Visual Studio has restored the NuGet packages of Forms9Patch as shown below, this is very important otherwise the solution WON'T compile.
 
 ![nuget-packages](images/nuget-packages.png)
 
-3. Once the NuGet packages have been restored and particularly the `Forms9Patch` package, build the project and make sure its builds successfully and then navigate to the `sharekit` project folder in your filesystem, then go to the folders `bin -> Debug -> netstandard2.0` and you should find the library `sharekit.dll` ready for use in your xamarin project.
+3. Once the NuGet packages have been restored and particularly the `Forms9Patch` package, build the project and make sure its builds successfully and then navigate to the `Shareit` project folder in your filesystem, then go to the folders `bin -> Debug -> netstandard2.0` and you should find the library `sharekit.dll` ready for use in your xamarin project.
 
 # Installing the Library
 
@@ -37,7 +37,7 @@ Xamarin implementation of [Share Kit](https://github.com/hellobloom/share-kit#re
     Forms9Patch.iOS.Settings.Initialize(this);
     LoadApplication(new App());
 	```
- After doing the above the `sharekit` library will now be ready for usage in your Xamarin project.
+ After doing the above the `sharekit.dll` library will now be ready for usage in your Xamarin project.
 
 # Usage
 
@@ -50,26 +50,26 @@ public MainPage()
 
 
     // set the request data
-    var requestData = new sharekit.RequestData
+    var requestData = new ShareKit.RequestData
     {
-        action = sharekit.RequestData.Action_attestation,
-        token = "0x8f31e48a585fd12ba58e70e03292cac712cbae39bc7eb980ec189aa88e24d043",
-        url = "https://receive-kit.bloom.co/api/receive",
-        org_logo_url = "https://bloom.co/images/notif/bloom-logo.png",
-        org_name = "Bloom",
-        org_usage_policy_url = "https://bloom.co/legal/terms",
-        org_privacy_policy_url = "https://bloom.co/legal/privacy",
-        types = new string[] { "full-name", "phone", "email" }
+        Action = ShareKit.RequestData.Action_attestation,
+        Token = "0x8f31e48a585fd12ba58e70e03292cac712cbae39bc7eb980ec189aa88e24d043",
+        Url = "https://receive-kit.bloom.co/api/receive",
+        OrgLogoUrl = "https://bloom.co/images/notif/bloom-logo.png",
+        OrgName = "Bloom",
+        OrgUsagePolicyUrl = "https://bloom.co/legal/terms",
+        OrgPrivacyPolicyUrl = "https://bloom.co/legal/privacy",
+        Types = new string[] { "full-name", "phone", "email" }
     };
 
-    // set the callback url to your app
+    // set the callback url
     var callBackUrl = "https://google.com";
 
     // then intialize the button
-    var bloomButton = new sharekit.ShareKit().RequestButton(requestData, callBackUrl);
+    var bloomButton = new ShareKit.ShareKit().RequestButton(requestData, callBackUrl);
 
     // set the layout padding
-	MainLayout.Padding = 5;
+    MainLayout.Padding = 5;
 
     // finally add the verify button to the layout
     MainLayout.Children.Add(bloomButton);

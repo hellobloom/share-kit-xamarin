@@ -20,15 +20,15 @@ namespace ShareKit
             else
             {
                 // set the share-kit-from query url
-                if (!string.IsNullOrWhiteSpace(requestData.url))
+                if (!string.IsNullOrWhiteSpace(requestData.Url))
                 {
-                    requestData.url += QueryUrl;
+                    requestData.Url += QueryUrl;
                 }
                 BloomRequestData = JsonConvert.SerializeObject(requestData);
             }
            
 
-            if (!string.IsNullOrEmpty(appCallBackUrl))
+            if (!string.IsNullOrWhiteSpace(appCallBackUrl))
             {
                 CallBackUrl = Uri.EscapeDataString(appCallBackUrl);
             }

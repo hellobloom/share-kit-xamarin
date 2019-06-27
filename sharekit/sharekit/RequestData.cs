@@ -1,19 +1,30 @@
-﻿namespace ShareKit
+﻿using Newtonsoft.Json;
+
+namespace ShareKit
 {
     public class RequestData
     {
-#pragma warning disable IDE1006
+
 
         public const string Action_attestation = "request_attestation_data";
-        public string action { get; set; }
-        public string token { get; set; }
-        public string url { get; set; }
-        public string org_logo_url { get; set; }
-        public string org_name { get; set; }
-        public string org_usage_policy_url { get; set; }
-        public string org_privacy_policy_url { get; set; }
-        public string[] types { get; set; }
 
-#pragma warning disable IDE1006
+        [JsonProperty("action")]
+        public string Action { get; set; }
+        [JsonProperty("token")]
+        public string Token { get; set; }
+        [JsonProperty("url")]
+        public string Url { get; set; }
+        [JsonProperty("org_logo_url")]
+        public string OrgLogoUrl { get; set; }
+        [JsonProperty("org_name")]
+        public string OrgName { get; set; }
+        [JsonProperty("org_usage_policy_url")]
+        public string OrgUsagePolicyUrl { get; set; }
+        [JsonProperty("org_privacy_policy_url")]
+        public string OrgPrivacyPolicyUrl { get; set; }
+        [JsonProperty("types")]
+        public string[] Types { get; set; }
+
+
     }
 }
