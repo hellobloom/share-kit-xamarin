@@ -38,7 +38,7 @@ namespace sharekittest
             var bloomButton = new ShareKit.ShareKit().RequestButton(requestData, callBackUrl);
 
             // set the layout padding
-			MainLayout.Padding = 5;
+            MainLayout.Padding = 5;
 
             // finally add the verify button to the layout
             MainLayout.Children.Add(bloomButton);
