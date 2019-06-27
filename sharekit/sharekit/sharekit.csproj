@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\bloombutton%40¾x.png" />
+    <None Remove="Resources\bloombutton%401x.png" />
+    <None Remove="Resources\bloombutton%401½x.png" />
+    <None Remove="Resources\bloombutton%402x.png" />
+    <None Remove="Resources\bloombutton%403x.png" />
+    <None Remove="Resources\bloombutton%404x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\bloombutton%40¾x.png" />
+    <EmbeddedResource Include="Resources\bloombutton%401x.png" />
+    <EmbeddedResource Include="Resources\bloombutton%401½x.png" />
+    <EmbeddedResource Include="Resources\bloombutton%402x.png" />
+    <EmbeddedResource Include="Resources\bloombutton%403x.png" />
+    <EmbeddedResource Include="Resources\bloombutton%404x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Forms9Patch" Version="1.7.0" />
+  </ItemGroup>
+</Project>
