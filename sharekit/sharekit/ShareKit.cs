@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Xamarin.Forms;
 
-namespace sharekit
+namespace ShareKit
 {
     public class ShareKit
     {
@@ -20,7 +20,7 @@ namespace sharekit
             else
             {
                 // set the share-kit-from query url
-                if (!string.IsNullOrEmpty(requestData.url))
+                if (!string.IsNullOrWhiteSpace(requestData.url))
                 {
                     requestData.url += QueryUrl;
                 }
@@ -33,7 +33,7 @@ namespace sharekit
                 CallBackUrl = Uri.EscapeDataString(appCallBackUrl);
             }
 
-            ImageButton bloomButton = new ImageButton
+            var bloomButton = new ImageButton
             {
                 Source = Forms9Patch.ImageSource.FromMultiResource(ResourceId)
             };

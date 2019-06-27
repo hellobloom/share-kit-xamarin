@@ -1,4 +1,4 @@
-﻿namespace sharekit
+﻿namespace ShareKit
 {
     public class RequestData
     {

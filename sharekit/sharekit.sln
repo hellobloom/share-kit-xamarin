@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sharekit", "sharekit\sharekit.csproj", "{299C1584-1995-44D3-ADCC-A9B23231ACAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShareKit", "sharekit\sharekit.csproj", "{299C1584-1995-44D3-ADCC-A9B23231ACAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
